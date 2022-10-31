@@ -32,7 +32,9 @@ export default async function Page({ params }: { params: { id: number } }) {
         </h1>
       </div>
 
-      <div className="px-2 pb-2 grid grid-flow-dense grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2">
+      <div
+        className="px-2 pb-2 grid grid-flow-dense grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2"
+      >
         {promises.map((pokemon) => {
           if (!pokemon) return;
           let details = pokemon.types.map((type) => type.type.name).join(" - ");
