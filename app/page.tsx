@@ -14,7 +14,7 @@ export default async function Page() {
         </h1>
       </div>
 
-      <div className="px-2 pb-2 grid grid-flow-dense grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2 max-w-4xl mx-auto">
+      <div className="px-2 pb-2 grid grid-flow-dense grid-cols-[repeat(1,auto)] lg:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]  gap-2 max-w-4xl mx-auto">
         {generations.map((generation) => (
           <GenerationCard
             key={generation.id}

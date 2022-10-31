@@ -11,7 +11,7 @@ const GenerationCard = ({ name, href }: Props) => {
   return (
     <Link href={href}>
       <div className="group relative h-53 flex flex-col items-center py-4 rounded-2xl">
-        <span className="text-xl text-white font-bold uppercase leading-none">
+        <span className="lg:text-xl text-4xl text-white font-bold uppercase leading-none">
           {name}
         </span>
         <div
